@@ -238,6 +238,7 @@ public class Parser {
         case is [String: Any]:
             isValid = type == .dictionary
         default:
+            isValid = type == .object
             break
         }
 
