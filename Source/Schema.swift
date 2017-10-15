@@ -35,6 +35,7 @@ import Foundation
 /// - array:      Represents a Swift `Array` type.
 /// - dictionary: Represents a Swift `Dictionary` type.
 /// - url:        Represents a Swift `URL` type.
+/// - object:     Represents a Swift object of `Any` type.
 public enum SchemaPropertyProtocol {
     case string
     case uint
@@ -45,6 +46,7 @@ public enum SchemaPropertyProtocol {
     case array
     case dictionary
     case url
+    case object
 }
 
 /// Represents a schema property and all its internal characteristics.

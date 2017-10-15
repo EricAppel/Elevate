@@ -158,6 +158,8 @@ public class Parser {
                         parsedValue = url as Any?
                         parsed[property.keyPath] = url
                     }
+                case .object:
+                    parsed[property.keyPath] = jsonValue
                 }
 
                 if let decodingMethod = property.decodingMethod {
